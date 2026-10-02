@@ -1,13 +1,14 @@
 package Entidades.DTO;
 
+import jakarta.validation.constraints.NotNull;
 import java.time.LocalDate;
 
 public record Conclusao(
-
+        @NotNull(message = "A data da investigação")
         LocalDate dataInvestigacao,
+
         String classificacaoFinal,
         String criterioConfirmacaoDescarte,
-
 
         String casoAutoctoneResidencia,
         String ufInfeccao,
@@ -21,12 +22,9 @@ public record Conclusao(
         LocalDate dataObito,
         LocalDate dataEncerramento,
 
-
         String observacoesAdicionais,
         String municipioUnidadeSaudeInvestigacao,
         String codUnidadeSaudeInvestigacao,
         String nomeResponsavelInvestigacao,
         String funcaoResponsavelInvestigacao
-
-) {
-}
+) {}
