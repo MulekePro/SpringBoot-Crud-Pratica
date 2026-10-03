@@ -4,7 +4,7 @@ import jakarta.validation.constraints.NotNull;
 import java.time.LocalDate;
 
 public record Conclusao(
-        @NotNull(message = "A data da investigação")
+        @NotNull(message = "A data da investigação é obrigatória.")
         LocalDate dataInvestigacao,
 
         String classificacaoFinal,
@@ -27,4 +27,4 @@ public record Conclusao(
         String codUnidadeSaudeInvestigacao,
         String nomeResponsavelInvestigacao,
         String funcaoResponsavelInvestigacao
-) {}
+) {}

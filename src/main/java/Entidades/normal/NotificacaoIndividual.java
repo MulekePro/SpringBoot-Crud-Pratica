@@ -14,16 +14,7 @@ public class NotificacaoIndividual {
     private String cartaoSus;
     private String nomeMae;
 
-    public NotificacaoIndividual(String nomePaciente, LocalDate dataNascimento, String idade, String sexo, String gestante, String racaCor, String escolaridade, String cartaoSus, String nomeMae) {
-        this.nomePaciente = nomePaciente;
-        this.dataNascimento = dataNascimento;
-        this.idade = idade;
-        this.sexo = sexo;
-        this.gestante = gestante;
-        this.racaCor = racaCor;
-        this.escolaridade = escolaridade;
-        this.cartaoSus = cartaoSus;
-        this.nomeMae = nomeMae;
+    public NotificacaoIndividual() {
     }
 
     public String getNomePaciente() {

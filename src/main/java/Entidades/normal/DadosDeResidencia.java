@@ -103,6 +103,8 @@ public class DadosDeResidencia {
         this.municipio = municipio;
         this.uf = uf;
     }
+    public DadosDeResidencia() {
+    }
 
     public String getPontoReferencia() {
         return pontoReferencia;

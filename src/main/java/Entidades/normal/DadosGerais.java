@@ -4,6 +4,7 @@ import java.time.LocalDate;
 
 public class DadosGerais {
 
+    private String numeroNotificacao;
     private Integer tipoNotificacao;
     private String agravo;
     private String codigoCid10;
@@ -11,22 +12,19 @@ public class DadosGerais {
     private String ufNotificacao;
     private String municipioNotificacao;
 
+    public String getNumeroNotificacao() {
+        return numeroNotificacao;
+    }
+
+    public void setNumeroNotificacao(String numeroNotificacao) {
+        this.numeroNotificacao = numeroNotificacao;
+    }
+
     public Integer getTipoNotificacao() {
         return tipoNotificacao;
     }
 
-    public DadosGerais(Integer tipoNotificacao, String agravo, String codigoCid10, LocalDate dataNotificacao, String ufNotificacao, String municipioNotificacao, String codigoIbgeMunicipio, String unidadeSaude, String codigoUnidadeSaude, LocalDate dataPrimeirosSintomas) {
-        this.tipoNotificacao = tipoNotificacao;
-        this.agravo = agravo;
-        this.codigoCid10 = codigoCid10;
-        this.dataNotificacao = dataNotificacao;
-        this.ufNotificacao = ufNotificacao;
-        this.municipioNotificacao = municipioNotificacao;
-        this.codigoIbgeMunicipio = codigoIbgeMunicipio;
-        this.unidadeSaude = unidadeSaude;
-        this.codigoUnidadeSaude = codigoUnidadeSaude;
-        this.dataPrimeirosSintomas = dataPrimeirosSintomas;
-    }
+
 
     public void setTipoNotificacao(Integer tipoNotificacao) {
         this.tipoNotificacao = tipoNotificacao;
